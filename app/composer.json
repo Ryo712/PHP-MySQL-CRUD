@@ -1,0 +1,6 @@
+{
+    "name": "oshiroryo/app",
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
