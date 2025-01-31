@@ -5,7 +5,7 @@ require __DIR__ . '/../src/db.php';
 $id = $_POST['id'] ?? null;
 
 if (!$id) {
-    die("❌ ID が指定されていません！");
+    die("ID が指定されていません！");
 }
 
 // データ削除処理
@@ -17,6 +17,6 @@ try {
     header("Location: index.php");
     exit;
 } catch (PDOException $e) {
-    die("❌ 削除エラー: " . $e->getMessage());
+    die("削除エラー: " . $e->getMessage());
 }
 ?>
